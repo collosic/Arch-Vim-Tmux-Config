@@ -1,0 +1,25 @@
+name: PageFile
+root: ~/Coding/course_work/DBMS/Project_1/codebase/rbf/
+
+# Pass in option for tmux here
+tmux_option: -2
+
+windows:
+  - pfm:
+      layout: 0a6b,239x57,0,0{125x57,0,0,1,113x57,126,0,5}  
+      panes:
+        - vim pfm.cc
+        - vim pfm.h
+  - rbfm:
+      layout: 0a6b,239x57,0,0{125x57,0,0,1,113x57,126,0,5}  
+      panes: 
+        - vim rbfm.cc
+        - vim rbfm.h
+  - util:
+      panes:
+        - vim test_util.h
+  - tests:
+      panes:
+        - vim rbftest1.cc
+
+ 
